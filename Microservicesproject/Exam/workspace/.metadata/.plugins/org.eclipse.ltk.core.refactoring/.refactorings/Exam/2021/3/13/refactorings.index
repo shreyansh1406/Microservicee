@@ -1,0 +1,15 @@
+1616731184836	Rename package 'java.com.ltts.team'
+1616731198740	Rename package 'java.com.ltts.team.controller'
+1616731213071	Rename package 'java.com.ltts.team.dao'
+1616731226326	Rename package 'java.com.ltts.team.model'
+1616731257464	Delete element
+1616731263419	Delete element
+1616731271884	Delete element
+1616731278209	Delete element
+1616731872641	Delete element
+1616731894912	Rename package 'java.com.ltts.Exam.dao'
+1616732076550	Move compilation unit
+1616732124468	Move compilation unit
+1616733891888	Rename package 'java.com.ltts.Exam.controller'
+1616733900316	Rename package 'java.com.ltts.Exam.model'
+1616733908050	Rename package 'java.com.ltts.Exam.repository'

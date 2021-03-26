@@ -1,0 +1,13 @@
+package java.com.ltts.Exam.repository;
+
+import java.com.ltts.Exam.model.Exam;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+public interface Examrepository extends JpaRepository<Exam, Long> {
+	@Query("SELECT x FROM list x WHERE x.examcode = ?1")
+	
+	public Exam findById(long examcode);
+	
+}

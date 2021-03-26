@@ -1,0 +1,14 @@
+package com.ltts.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.ltts.Schedule.model.Schedule;
+
+
+
+public interface ScheduleRepository extends JpaRepository<Schedule, String> {
+	@Query("SELECT k FROM Shedule k WHERE k.fullname = ?1")
+	public Schedule findByfullname(String fullname);
+
+}

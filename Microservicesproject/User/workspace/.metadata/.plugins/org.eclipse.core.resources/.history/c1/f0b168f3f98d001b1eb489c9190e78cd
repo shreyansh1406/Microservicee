@@ -1,0 +1,28 @@
+package com.ltts.Schedule.controller;
+
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.ltts.Schedule.model.Schedule;
+import com.ltts.repository.ScheduleRepository;
+
+
+@RestController
+public class Schedulecontroller {
+		
+	@Autowired
+	private ScheduleRepository sRepo;
+	
+	@GetMapping("/schedule")
+	public List<Schedule> listUsers( Schedule li) {
+		List<Schedule> listUsers = sRepo.findAll();
+		return listUsers;
+}}
